@@ -1,29 +1,31 @@
 # tasks-for-today
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Run your tests
+### Builds and sets up production build for GitHub pages. (Requires Python)
+
 ```
-npm run test
+npm run deploy
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
