@@ -5,7 +5,9 @@
       <div class="container">
         <ProgressBar />
       </div>
-      <div class="container"></div>
+      <div class="container last-container">
+        <TodoList />
+      </div>
     </main>
   </div>
 </template>
@@ -13,12 +15,14 @@
 <script>
 import Header from './components/Header'
 import ProgressBar from './components/ProgressBar'
+import TodoList from './components/TodoList'
 
 export default {
   name: 'app',
   components: {
     Header,
-    ProgressBar
+    ProgressBar,
+    TodoList
   }
 }
 </script>
@@ -52,12 +56,22 @@ main {
 
 .container {
   padding: 3em;
+  padding-bottom: 0;
   width: 90%;
 }
 
-@media (min-width: 700px) {
+.last-container {
+  padding-bottom: 4em;
+}
+
+@media (min-width: 1000px) {
   main {
     flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .last-container {
+    padding-bottom: 0;
   }
 }
 </style>
