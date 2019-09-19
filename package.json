@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "vue-cli-service build && python replace_docs.py && git add * && git commit -m \"Deploy to GitHub Pages\" && git push origin master",
+    "deploy": "vue-cli-service build && python replace_docs.py && echo tasksfor.today > docs/CNAME && git add * && git commit -m \"Deploy to GitHub Pages\" && git push origin master",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
