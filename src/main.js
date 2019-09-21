@@ -10,16 +10,9 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(VueProgress)
 
-const router = new VueRouter({ mode: 'history', routes })
+const router = new VueRouter({ routes })
 
 new Vue({
   router,
-  render: h => h(App),
-  created() {
-    if (sessionStorage.redirect) {
-      const redirect = sessionStorage.redirect
-      delete sessionStorage.redirect
-      this.$router.push(redirect)
-    }
-  }
+  render: h => h(App)
 }).$mount('#app')
