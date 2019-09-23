@@ -30,7 +30,7 @@ main {
 .container {
   padding: 3em;
   padding-bottom: 0;
-  width: 90%;
+  width: 100%;
 }
 
 .last-container {
@@ -41,6 +41,12 @@ main {
   main {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+  }
+
+  .container {
+    min-height: 88vh;
+    max-width: 850px;
   }
 
   .last-container {

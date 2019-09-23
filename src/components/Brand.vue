@@ -13,12 +13,14 @@ export default {}
   background-image: url('../assets/tweed.png');
   background-repeat: repeat;
   background-position: center;
-  padding: 2em;
   box-shadow: 0 5px 10px #555;
+  min-height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-  text-align: center;
   margin-bottom: 0;
   color: aliceblue;
   font-size: 3rem;
